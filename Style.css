@@ -1,0 +1,56 @@
+/* Seleciona o corpo inteiro da página */
+body {
+    /* Define a fonte do texto. Se o navegador não tiver Arial, usa qualquer sem-serifa */
+    font-family: Arial, sans-serif;
+      /* Espaçamento entre as linhas do texto, para facilitar a leitura */
+    line-height: 1.6;
+     /* Remove as margens padrão que o navegador coloca no topo e nas laterais */
+    margin: 0;
+     /* Define a cor de fundo da página (um cinza bem claro) */
+    background-color: #f4f4f4;
+      /* Define a cor do texto (um cinza quase preto) */
+    color: #333;
+     /* Centraliza todos os textos e elementos de bloco dentro do body */
+    text-align: center;
+}
+/* Estiliza o cabeçalho (topo do site) */
+header {
+     /* Cor de fundo azul escuro/cinza (formato Hexadecimal) */
+    background: #2c3e50;
+     /* Cor do texto dentro do cabeçalho (branco) */
+    color: white;
+     /* Espaçamento interno: 2rem em cima/baixo e 0 nas laterais */
+    padding: 2rem 0;
+}
+/* Estiliza a foto de perfil usando a classe que criamos no HTML */
+.profile-pic {
+      /* Define o tamanho fixo da imagem */
+    width: 150px;
+    height: 150px;
+     /* Cria o efeito circular (50% de arredondamento) */
+    border-radius: 50%;
+     /* Adiciona uma borda sólida branca de 3 pixels ao redor da foto */
+    border: 3px solid white;
+}
+/* Estiliza cada uma das seções do blog (Sobre, Hobbies, etc) */
+section {
+     /* Espaço dentro da caixa (entre o texto e a borda) */
+    padding: 20px;
+      /* Margem de 10px em cima/baixo e 'auto' nas laterais para centralizar a caixa */
+    margin: 10px auto;
+     /* Limita a largura máxima da caixa para não ficar esticada em telas grandes */
+    max-width: 600px;
+     /* Cor de fundo branca para destacar as seções do fundo cinza */
+    background: white;
+    /* Arredonda as pontas das caixas das seções */
+    border-radius: 8px;
+     /* Cria uma sombra suave atrás da caixa para dar profundidade */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+/* Estiliza a lista (Hobbies) */
+ul {
+     /* Remove as "bolinhas" padrão da lista */
+    list-style: none;
+    /* Zera o recuo padrão da lista */
+    padding: 0;
+}
