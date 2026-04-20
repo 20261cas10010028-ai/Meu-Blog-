@@ -1,63 +1,59 @@
 body {
-    /* Troquei para uma fonte mais moderna e limpa que a Arial */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     margin: 0;
-    /* FUNDO ESCURO QUE VOCÊ GOSTOU */
     background-color: #1e272e; 
     color: #333;
     text-align: center;
+    overflow-x: hidden; /* Evita que o site balance para os lados no celular */
 }
 
 header {
-    /* AZUL PROFISSIONAL */
     background: #2c3e50;
     color: white;
-    padding: 3rem 0;
-    /* LINHA AMARELA QUE VOCÊ GOSTOU */
+    padding: 2rem 1rem; /* Padding menor para não ocupar a tela toda do celular */
     border-bottom: 5px solid #f1c40f; 
 }
 
 header h1 {
-    /* LETRA EM CAIXA ALTA PARA DAR DESTAQUE */
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    font-size: 1.5rem; /* Tamanho ajustado para celular */
 }
 
 .profile-pic {
-    width: 150px;
-    height: 150px;
+    width: 130px; /* Um pouco menor para celular */
+    height: 130px;
     border-radius: 50%;
     display: block;
     margin: 15px auto;
     object-fit: cover;
-    /* BORDA AMARELA NA FOTO PARA COMBINAR */
-    border: 4px solid #f1c40f; 
+    border: 4px solid #f1c40f;
 }
 
 section {
-    padding: 30px;
-    margin: 30px auto;
-    max-width: 750px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%; /* Ocupa 90% da tela no celular */
+    max-width: 750px; /* No PC, trava em 750px */
     background: white;
     border-radius: 12px;
-    /* SOMBRA UM POUCO MAIS FORTE PARA DESTACAR NO FUNDO ESCURO */
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    box-sizing: border-box; /* Garante que o padding não quebre a largura */
 }
 
-/* Títulos das seções em azul para ornar com o header */
 h2 {
     color: #2c3e50;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
-/* --- O RESTANTE DO SEU CÓDIGO DO CARROSSEL E BOTÕES CONTINUA ABAIXO --- */
-
+/* --- CARROSSEL RESPONSIVO --- */
 .carrossel-container {
     position: relative;
-    width: 320px;
-    height: 400px;
+    width: 100%; /* Ocupa a largura total da Section */
+    max-width: 320px; /* Limite de largura */
+    height: 380px;
     margin: 20px auto;
     overflow: hidden;
     border: 2px solid #ddd;
@@ -85,74 +81,75 @@ h2 {
 
 .card-servico img {
     width: 100%;
-    height: 250px;
+    height: 220px; /* Altura fixa para não quebrar o layout */
     object-fit: cover;
     border-radius: 10px;
 }
 
+/* SETAS: No celular elas ficam menores para não atrapalhar */
 .seta {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(44, 62, 80, 0.8); /* Azul do header com transparência */
+    background: rgba(44, 62, 80, 0.9);
     color: white;
     border: none;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     cursor: pointer;
     z-index: 10;
 }
 
-.anterior { left: 10px; }
-.proximo { right: 10px; }
+.anterior { left: 5px; }
+.proximo { right: 5px; }
 
-/* Lista de botões centralizada */
+/* BOTÕES DE CONTATO */
 .lista-contatos {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px; /* Espaço entre um botão e outro */
-    padding: 20px;
+    gap: 12px;
+    padding: 10px;
 }
 
-/* O botão em si - discreto e elegante */
 .btn-contato {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;        /* Espaço pequeno entre o ícone e o texto */
-    width: 100%;
-    max-width: 250px; /* Largura controlada para não ficar gigante */
-    padding: 10px 20px;
+    gap: 10px;
+    width: 90%; /* Botão quase na largura toda no celular */
+    max-width: 280px; 
+    padding: 12px;
     text-decoration: none;
     color: white;
     font-weight: bold;
     font-size: 0.9rem;
-    border-radius: 8px; /* Cantos levemente arredondados */
+    border-radius: 8px;
     transition: transform 0.2s;
 }
 
-/* AQUI ESTÁ O SEGREDO: Tamanho fixo para os ícones */
 .btn-contato img {
-    width: 20px;  /* Tamanho pequeno e discreto */
-    height: 20px;
+    width: 22px; 
+    height: 22px;
     object-fit: contain;
 }
 
-/* Efeito ao passar o mouse */
-.btn-contato:hover {
-    transform: translateY(-2px);
-    filter: brightness(1.1);
-}
-
-/* Cores dos botões */
+/* CORES DOS BOTÕES */
 .whats { background-color: #25d366; }
 .insta { background-color: #e1306c; }
 .face  { background-color: #1877f2; }
 
 footer {
-    padding: 20px;
+    padding: 30px 10px;
     color: #bdc3c7;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+}
+
+/* --- AJUSTES EXCLUSIVOS PARA TELAS GRANDES (PC) --- */
+@media (min-width: 768px) {
+    header h1 { font-size: 2.2rem; }
+    .profile-pic { width: 160px; height: 160px; }
+    header { padding: 4rem 0; }
+    .btn-contato { width: 100%; }
 }
