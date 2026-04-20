@@ -51,72 +51,72 @@ h2 {
 /* --- CARROSSEL RESPONSIVO --- */
 /* AJUSTE DO CONTAINER DO CARROSSEL */
 /* 1. A MOLDURA (O que segura tudo) */
+/* 1. MOLDURA: Travamos a altura para não sobrar espaço branco */
 .carrossel-container {
     position: relative;
-    width: 90%;            /* Ocupa quase toda a largura no celular */
-    max-width: 350px;      /* Não deixa ficar gigante no PC */
-    height: 350px;         /* Altura fixa para não empurrar os botões */
-    margin: 20px auto;
-    overflow: hidden;      /* ISSO AQUI impede que a foto vaze */
-    border-radius: 15px;
-    background: #eee;      /* Fundo cinza caso a foto demore a carregar */
-    border: 2px solid #2c3e50;
+    width: 95%;            /* Quase toda a largura do celular */
+    max-width: 350px;
+    height: 300px;         /* Altura fixa e menor para não vazar */
+    margin: 15px auto;
+    overflow: hidden;      /* Corta o que sobrar da imagem */
+    border-radius: 12px;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* 2. O TRILHO (Onde as fotos correm) */
 .galeria-servicos {
     display: flex;
     width: 100%;
     height: 100%;
-    transition: transform 0.4s ease-in-out;
 }
 
-/* 3. O CARD DE CADA FOTO */
 .card-servico {
-    min-width: 100%;       /* Cada foto ocupa exatamente 1 largura do container */
+    min-width: 100%;
     height: 100%;
-    position: relative;    /* Para o título ficar em cima da foto */
-    display: flex;
-    flex-direction: column;
+    position: relative;
+    padding: 0 !important; /* Remove qualquer espaço interno que empurre a imagem */
 }
 
+/* 2. A IMAGEM: O 'cover' faz ela preencher o quadrado todo sem distorcer */
 .card-servico img {
     width: 100%;
-    height: 100%;          /* Faz a foto preencher a altura toda */
-    object-fit: cover;     /* Corta a foto para caber sem achatar */
+    height: 100%;
+    object-fit: cover;    /* AQUI ESTÁ A MÁGICA: preenche tudo e corta as sobras */
+    display: block;
 }
 
-/* 4. O TÍTULO (Em cima da foto para economizar espaço) */
+/* 3. TÍTULO: Vamos colocar DENTRO da imagem na parte de baixo */
 .card-servico h3 {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Faixa preta transparente */
+    background: rgba(0, 0, 0, 0.6); /* Faixa preta transparente */
     color: #fff;
     margin: 0;
-    padding: 10px 0;
+    padding: 8px 0;
     font-size: 0.9rem;
     text-align: center;
 }
 
-/* 5. AS SETAS (Garantindo que apareçam) */
+/* 4. SETAS: Ajustadas para ficarem visíveis sobre a foto */
 .seta {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(44, 62, 80, 0.9);
-    color: white;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
     border: none;
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
+    z-index: 10;
+    font-size: 18px;
     cursor: pointer;
-    z-index: 100; /* Garante que fique na frente da foto */
-    font-weight: bold;
 }
+.anterior { left: 8px; }
+.proximo { right: 8px; }
 
-.anterior { left: 10px; }
-.proximo { right: 10px; }
 
 /* 6. GARANTIR QUE OS BOTÕES APAREÇAM LOGO ABAIXO */
 .lista-contatos {
@@ -165,4 +165,3 @@ footer {
     header { padding: 4rem 0; }
     .btn-contato { width: 100%; }
 }
-
