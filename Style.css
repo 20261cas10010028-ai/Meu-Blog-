@@ -54,17 +54,19 @@ h2 {
 /* 1. MOLDURA: Travamos a altura para não sobrar espaço branco */
 /* 1. MOLDURA (A LINHA PRETA MODERNA) */
 /* 1. MOLDURA COM BORDA GARANTIDA */
+/* 1. MOLDURA COM BORDA QUE APARECE NO CELULAR */
 .carrossel-container {
     position: relative;
     width: 90%;
     max-width: 350px;
-    height: 350px;
+    height: 380px; /* Aumentei um pouco a altura para caber o texto */
     margin: 25px auto;
     overflow: hidden;
     border-radius: 15px;
     background: #fff;
-    /* Usando outline em vez de border para ela não sumir no celular */
-    outline: 3px solid #2c3e50; 
+    /* Usando border e box-sizing para a borda não sumir */
+    border: 3px solid #2c3e50; 
+    box-sizing: border-box;
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
@@ -77,7 +79,7 @@ h2 {
 .card-servico {
     min-width: 100%;
     height: 100%;
-    position: relative; /* Isso permite que o texto grude na foto */
+    position: relative; 
     display: flex;
     flex-direction: column;
 }
@@ -89,26 +91,40 @@ h2 {
     display: block;
 }
 
-/* 2. LEGENDA DENTRO DA FOTO (ESTILO MODERNO) */
-.card-servico h3 {
+/* 2. AREA DA DESCRIÇÃO (H3 + P) */
+/* Criamos uma caixa que agrupa o título e o parágrafo no fundo da foto */
+.card-servico h3, 
+.card-servico p {
     position: absolute;
-    bottom: 0;           /* Cola no fundo da imagem */
     left: 0;
     right: 0;
     margin: 0;
-    padding: 15px 5px;
-    background: rgba(44, 62, 80, 0.85); /* Fundo azul escuro transparente */
-    color: #f1c40f !important;      /* Amarelo para destacar */
-    font-size: 1rem;
-    font-weight: bold;
-    text-align: center;
-    z-index: 20;         /* Garante que fique acima da imagem */
+    background: rgba(44, 62, 80, 0.9); /* Fundo azul escuro */
+    color: white;
+    z-index: 20;
+    padding: 5px 10px;
 }
 
-/* 3. SETAS SOBRE TUDO */
+/* Título (Fica mais em cima ou no topo da faixa) */
+.card-servico h3 {
+    bottom: 50px; /* Ajuste para ficar acima do parágrafo */
+    color: #f1c40f; /* Amarelo para destacar */
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Parágrafo (A descrição detalhada que você mencionou) */
+.card-servico p {
+    bottom: 0; /* Gruda no fundo */
+    font-size: 0.85rem;
+    padding-bottom: 15px;
+    line-height: 1.2;
+}
+
+/* 3. SETAS */
 .seta {
     position: absolute;
-    top: 50%;
+    top: 40%; /* Subi um pouco para não tapar o texto */
     transform: translateY(-50%);
     background: rgba(255, 255, 255, 0.9);
     color: #2c3e50;
@@ -116,10 +132,11 @@ h2 {
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    z-index: 30;         /* Acima da legenda e da imagem */
+    z-index: 30;
     font-weight: bold;
     cursor: pointer;
 }
+
 
 .anterior { left: 10px; }
 .proximo { right: 10px; }
