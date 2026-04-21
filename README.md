@@ -11,4 +11,4 @@ Este projeto foi desenvolvido em parceria com o **Google Gemini (IA)**.
 A IA auxiliou na criação da estrutura do código, explicações técnicas via comentários e organização do passo a passo.
 
 ## Como acessar
-[Seu nome aqui]
+[ https://20261cas10010028-ai.github.io/Meu-Blog-/]
