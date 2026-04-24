@@ -15,10 +15,24 @@
 </head>
 <body>
      <!-- HEADER: Cabeçalho do site, geralmente onde fica o topo e o título principal -->
-    <header>
-         <!-- Tag de imagem: 'src' é o caminho do arquivo e 'alt' é o texto alternativo -->
-        <img src="logotipo.jpg" alt="empresa" class="profile-pic">
-        <h1>Bem-vindo á F.Moraes Instalações!!</h1>
+   <header style="
+    position: relative;
+    background-image: url('fundo-eletrico.jpg');
+    background-size: cover;
+    background-position: center;
+">
+    <!-- Camada escura por cima da foto, para o texto ficar legível -->
+    <div style="
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(0, 0, 0, 0.55);
+    "></div>
+
+    <!-- Logo e título ficam na frente da camada escura -->
+    <img src="logotipo.jpg" alt="empresa" class="profile-pic" style="position: relative; z-index: 1;">
+    <h1 style="position: relative; z-index: 1;">Bem-vindo á F.Moraes Instalações!!</h1>
+</header>
     </header>
     <!-- MAIN: Conteúdo principal da página -->
     <main>
