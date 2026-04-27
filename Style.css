@@ -1,0 +1,192 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #1e272e; 
+    color: #333;
+    text-align: center;
+    overflow-x: hidden; /* Evita que o site balance para os lados no celular */
+}
+
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 2rem 1rem; /* Padding menor para não ocupar a tela toda do celular */
+    border-bottom: 5px solid #f1c40f; 
+}
+
+header h1 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.5rem; /* Tamanho ajustado para celular */
+}
+
+.profile-pic {
+    width: 130px; /* Um pouco menor para celular */
+    height: 130px;
+    border-radius: 50%;
+    display: block;
+    margin: 15px auto;
+    object-fit: cover;
+    border: 4px solid #f1c40f;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%; /* Ocupa 90% da tela no celular */
+    max-width: 750px; /* No PC, trava em 750px */
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    box-sizing: border-box; /* Garante que o padding não quebre a largura */
+}
+
+h2 {
+    color: #2c3e50;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+/* --- CARROSSEL RESPONSIVO --- */
+/* AJUSTE DO CONTAINER DO CARROSSEL */
+/* 1. A MOLDURA (O que segura tudo) */
+/* 1. MOLDURA: Travamos a altura para não sobrar espaço branco */
+/* 1. MOLDURA (A LINHA PRETA MODERNA) */
+/* 1. MOLDURA COM BORDA GARANTIDA */
+/* 1. MOLDURA COM BORDA QUE APARECE NO CELULAR */
+.carrossel-container {
+    position: relative;
+    width: 90%;
+    max-width: 350px;
+    height: 380px; /* Aumentei um pouco a altura para caber o texto */
+    margin: 25px auto;
+    overflow: hidden;
+    border-radius: 15px;
+    background: #fff;
+    /* Usando border e box-sizing para a borda não sumir */
+    border: 3px solid #2c3e50; 
+    box-sizing: border-box;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.galeria-servicos {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.card-servico {
+    min-width: 100%;
+    height: 100%;
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+}
+
+.card-servico img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* 2. AREA DA DESCRIÇÃO (H3 + P) */
+/* Criamos uma caixa que agrupa o título e o parágrafo no fundo da foto */
+.card-servico h3, 
+.card-servico p {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0;
+    background: rgba(44, 62, 80, 0.9); /* Fundo azul escuro */
+    color: white;
+    z-index: 20;
+    padding: 5px 10px;
+}
+
+/* Título (Fica mais em cima ou no topo da faixa) */
+.card-servico h3 {
+    bottom: 50px; /* Ajuste para ficar acima do parágrafo */
+    color: #f1c40f; /* Amarelo para destacar */
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Parágrafo (A descrição detalhada que você mencionou) */
+.card-servico p {
+    bottom: 0; /* Gruda no fundo */
+    font-size: 0.85rem;
+    padding-bottom: 15px;
+    line-height: 1.2;
+}
+
+/* 3. SETAS */
+.seta {
+    position: absolute;
+    top: 40%; /* Subi um pouco para não tapar o texto */
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    color: #2c3e50;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    z-index: 30;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.anterior { left: 10px; }
+.proximo { right: 10px; }
+
+/* 6. GARANTIR QUE OS BOTÕES APAREÇAM LOGO ABAIXO */
+.lista-contatos {
+    margin-top: 30px;
+    clear: both; /* Limpa qualquer erro de empilhamento */
+}
+
+
+.btn-contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 90%; /* Botão quase na largura toda no celular */
+    max-width: 280px; 
+    padding: 12px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.btn-contato img {
+    width: 22px; 
+    height: 22px;
+    object-fit: contain;
+}
+
+/* CORES DOS BOTÕES */
+.whats { background-color: #25d366; }
+.insta { background-color: #e1306c; }
+.face  { background-color: #1877f2; }
+
+footer {
+    padding: 30px 10px;
+    color: #bdc3c7;
+    font-size: 0.8rem;
+}
+
+/* --- AJUSTES EXCLUSIVOS PARA TELAS GRANDES (PC) --- */
+@media (min-width: 768px) {
+    header h1 { font-size: 2.2rem; }
+    .profile-pic { width: 160px; height: 160px; }
+    header { padding: 4rem 0; }
+    .btn-contato { width: 100%; }
+}
+
+
