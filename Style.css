@@ -21,7 +21,39 @@ header {
     /* Adicione uma altura mínima se o fundo não aparecer */
     min-height: 200px; 
 }
+.servicos h2 {
+    text-align: center; /* Centraliza o título */
+    margin-top: 40px;   /* Dá um espaço em relação ao texto de cima */
+    color: #333;        /* Escolha uma cor que combine com seu layout */
+    font-size: 1.8rem;  /* Ajusta o tamanho da letra */
+    border-bottom: 2px solid #f39c12; /* Adiciona uma linha embaixo (opcional) */
+    display: inline-block;
+    padding-bottom: 10px;
+}
 
+#servicos-eletrica {
+    padding: 60px 0; /* Espaço em cima e embaixo */
+    background-color: #ffffff; /* Cor de fundo branca para destacar */
+    text-align: center;
+}
+
+#servicos-eletrica h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+/* Linha decorativa embaixo do título para combinar com o estilo de blog */
+#servicos-eletrica h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #f39c12; /* Cor laranja de eletricidade */
+    margin: 10px auto 0;
+}
 }
 
 header h1 {
