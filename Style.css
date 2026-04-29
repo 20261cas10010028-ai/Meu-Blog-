@@ -13,6 +13,77 @@ header {
     color: white;
     padding: 2rem 1rem; /* Padding menor para não ocupar a tela toda do celular */
     border-bottom: 5px solid #f1c40f; 
+    .meu-cabecalho {
+    position: relative;
+    background-image: url('fundo-eletrico.jpg');
+    background-size: cover;
+    background-position: center;
+    /* Adicione uma altura mínima se o fundo não aparecer */
+    min-height: 200px; 
+}
+.servicos h2 {
+    text-align: center; /* Centraliza o título */
+    margin-top: 40px;   /* Dá um espaço em relação ao texto de cima */
+    color: #333;        /* Escolha uma cor que combine com seu layout */
+    font-size: 1.8rem;  /* Ajusta o tamanho da letra */
+    border-bottom: 2px solid #f39c12; /* Adiciona uma linha embaixo (opcional) */
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+#servicos-eletrica {
+    padding: 60px 0; /* Espaço em cima e embaixo */
+    background-color: #ffffff; /* Cor de fundo branca para destacar */
+    text-align: center;
+}
+
+#servicos-eletrica h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+/* Linha decorativa embaixo do título para combinar com o estilo de blog */
+#servicos-eletrica h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #f39c12; /* Cor laranja de eletricidade */
+    margin: 10px auto 0;
+}
+}
+.servicos {
+  display: flex; /* Coloca os itens lado a lado */
+  justify-content: space-around;
+  padding: 20px;
+  gap: 20px; /* Espaço entre os cards */
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px; /* Bordas arredondadas */
+  padding: 20px;
+  text-align: center;
+  width: 30%; /* Largura de cada card */
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.botao {
+  display: inline-block;
+  background-color: #f1c40f; /* Amarelo da imagem */
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #000;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
 header h1 {
@@ -188,3 +259,211 @@ footer {
     header { padding: 4rem 0; }
     .btn-contato { width: 100%; }
 }
+
+
+#sobre, .secao-branca, #servicos, #contato {
+    background-color: white;
+    border: 3px solid #f1c40f; /* A borda amarela que você pediu */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 40px;
+}
+
+/* Estilo específico para os 3 Cards de Serviços */
+.card {
+    background-color: white;
+    border: 3px solid #f1c40f; /* Borda amarela nos cards também */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Efeito suave ao passar o mouse */
+}
+
+/* Efeito opcional: o card dá uma leve subida quando passa o mouse */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+/* Isso coloca a borda amarela na caixa do título e nos cards de serviço */
+.secao-branca, .card, #servicos-eletrica .container {
+    border: 3px solid #f1c40f !important; /* Cor amarela do seu botão */
+    border-radius: 15px; /* Deixa as pontas arredondadas como na foto */
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidade */
+}
+
+/* Ajuste específico para a caixa do título ficar igual ao "Sobre Mim" */
+#servicos-eletrica .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 35px;
+}
+..card {
+    background-color: white !important;
+    border: 2px solid #f1c40f !important; /* Moldura amarela em tudo */
+    border-radius: 12px !important;
+    overflow: hidden; /* Corta a foto para encaixar no arredondado */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* 2. A FOTO: Ocupa o topo certinho sem bordas internas */
+.card img {
+    width: 100% !important;
+    height: 200px !important;
+    object-fit: cover !important; /* Não deixa a foto esticar */
+    border: none !important; 
+    margin: 0 !important;
+}
+
+/* 3. O TÍTULO: Letras em Amarelo com destaque */
+.card h3 {
+    color: #f1c40f !important; /* Cor amarela na letra */
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: 20px 0 10px 0;
+    text-transform: uppercase; /* Deixa em caixa alta pra destacar */
+    font-weight: bold;
+}
+
+/* 4. O TEXTO DE DESCRIÇÃO */
+.card p {
+    color: #444;
+    font-size: 14px;
+    padding: 0 15px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Se as suas fotos estiverem com borda amarela dentro do card, vamos tirar para não ficar dobrado */
+.card img, .card .espaco-imagem {
+    border: none !important; 
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+/* Isso faz os cards ficarem na mesma linha e centralizados */
+.servicos {
+    display: flex !important;
+    flex-direction: row !important; /* Força ficar lado a lado */
+    justify-content: center !important;
+    gap: 20px !important; /* Espaço entre os cards */
+    flex-wrap: wrap !important; /* Se a tela for pequena (celular), ele joga pra baixo */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Ajuste do Card para não ficar gigante */
+.card {
+    flex: 1; /* Faz os 3 terem o mesmo tamanho */
+    min-width: 300px; /* Largura mínima de cada card */
+    max-width: 350px; /* Largura máxima para não esticar demais */
+    background-color: white !important;
+    border: 3px solid #f1c40f !important;
+    border-radius: 15px !important;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Garante que a foto preencha o topo do card */
+.card img {
+    width: 100% !important;
+    height: 200px !important;
+    object-fit: cover !important;
+}
+/* Para a FOTO ocupar todo o topo do card (sem espaço branco nas laterais) */
+.card img {
+    width: 100% !important;
+    height: 200px !important;
+    object-fit: cover !important;
+    border-radius: 10px 10px 0 0 !important; /* Arredonda só os cantos de cima */
+    margin: 0 !important;
+    display: block !important;
+}
+
+/* Para desgrudar os cards da borda da caixa branca */
+.servicos {
+    display: flex !important;
+    justify-content: center !important;
+    gap: 25px !important;
+    padding: 40px !important; /* Dá um espaço interno na caixa branca */
+    flex-wrap: wrap !important;
+}
+
+/* Ajuste no CARD para o texto não ficar colado na foto */
+.card {
+    background-color: white !important;
+    border: 2px solid #f1c40f !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px; /* Espaço no final do card */
+}
+/* Ajuste final para as fotos preencherem o topo do card */
+.card {
+    padding: 0 !important; /* Remove qualquer espaço interno que esteja empurrando a foto */
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 100% !important;
+    height: 200px !important;
+    object-fit: cover !important;
+    margin: 0 !important;
+    border-bottom: 2px solid #f1c40f; /* Uma linha amarela fina para separar a foto do texto */
+}
+
+/* Espaçamento para o texto dentro do card não ficar colado na borda */
+.card h3, .card p {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* --- REGRA DE OURO PARA O ALINHAMENTO --- */
+
+/* Isso vai alinhar a Bio, o Título e a Seção de Cards na mesma largura */
+#sobre, 
+#servicos-eletrica, 
+.servicos {
+    max-width: 1100px !important; /* Todas as caixas terão o mesmo tamanho máximo */
+    width: 90% !important;        /* Respiro para não colar na tela do celular */
+    margin: 30px auto !important; /* Centraliza todas na tela e dá espaço entre elas */
+    display: block !important;
+    box-sizing: border-box;
+}
+
+/* Ajuste específico para a caixa do Título (que estava curta) */
+#servicos-eletrica {
+    background-color: white;
+    border: 3px solid #f1c40f;
+    border-radius: 15px;
+    padding: 40px 20px; /* Mais espaço interno para o texto */
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Garante que os cards fiquem bem espalhados dentro da largura de 1100px */
+.servicos {
+    background-color: white;
+    border: 3px solid #f1c40f;
+    border-radius: 15px;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    gap: 20px !important;
+    flex-wrap: wrap !important;
+    padding: 30px !important;
+}
+
+
