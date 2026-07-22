@@ -57,20 +57,21 @@ a{color:inherit;}
 }
 .hero-bg{
   position:absolute;inset:0;background-image:url('fundo-eletrico.jpg');background-size:cover;background-position:center 55%;
-  filter:saturate(0.9);
+  filter:saturate(0.9) brightness(0.55);
 }
 .hero::before{
   content:'';position:absolute;inset:0;
-  background:linear-gradient(180deg, rgba(15,18,24,0.35) 0%, rgba(15,18,24,0.6) 55%, rgba(15,18,24,0.97) 100%);
+  background:linear-gradient(180deg, rgba(15,18,24,0.55) 0%, rgba(15,18,24,0.72) 55%, rgba(15,18,24,0.97) 100%);
 }
 .hero-content{position:relative;z-index:2;padding:0 22px 44px;}
 .hero-logo{width:96px;height:96px;border-radius:50%;border:3px solid var(--copper);margin-bottom:22px;object-fit:cover;background:#fff;box-shadow:0 6px 18px rgba(0,0,0,0.4);}
 .hero h1{
   font-family:var(--font-display);font-weight:800;font-size:clamp(40px,11vw,64px);
   line-height:0.92;margin:0 0 14px;text-transform:uppercase;letter-spacing:-0.01em;
+  text-shadow:0 2px 14px rgba(0,0,0,0.5);
 }
 .hero h1 span{color:var(--copper);}
-.hero p{font-size:15px;color:var(--muted);max-width:440px;line-height:1.6;margin:0 0 26px;}
+.hero p{font-size:15px;color:#dfe2ea;max-width:440px;line-height:1.6;margin:0 0 26px;text-shadow:0 1px 8px rgba(0,0,0,0.6);}
 .hero-cta{
   display:inline-flex;align-items:center;gap:10px;background:var(--copper);color:#161005;
   font-weight:700;font-size:14.5px;padding:15px 24px;border-radius:10px;text-decoration:none;
