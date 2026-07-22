@@ -1,231 +1,206 @@
-<!-- A primeira linha define o tipo do documento como HTML5 -->
 <!DOCTYPE html>
-<!-- O atributo 'lang="pt-br"' indica que o conteúdo está em português do Brasil -->
 <html lang="pt-br">
-
 <head>
-     <!-- Define a codificação de caracteres (UTF-8 suporta acentos e emojis) -->
-    <meta charset="UTF-8">
-     <!-- Garante que o site seja responsivo (fique bom em celulares e computadores) -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Título que aparece na aba do navegador -->
-    <title>F.Moraes Instalações</title>
-    <!-- Link que conecta este HTML ao arquivo de estilos CSS -->
-    <link rel="stylesheet" href="Style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>F.Moraes Instalações e Climatização — Elétrica e Ar-Condicionado em Corbélia</title>
+<meta name="description" content="Instalação e manutenção elétrica, instalação e higienização de ar-condicionado inverter em Corbélia e região. Orçamento rápido pelo WhatsApp.">
+<link rel="icon" href="logotipo.jpg">
+<link rel="stylesheet" href="Style_final.css">
 </head>
 <body>
-     <!-- HEADER: Cabeçalho do site, geralmente onde fica o topo e o título principal -->
-   <header style="
-    position: relative;
-    background-image: url('fundo-eletrico.jpg');
-    background-size: cover;
-    background-position: center;
-">
-    <!-- Camada escura por cima da foto, para o texto ficar legível -->
-    <div style="
-        position: absolute;
-        top: 0; left: 0;
-        width: 100%; height: 100%;
-        background: rgba(0, 0, 0, 0.55);
-    "></div>
 
-    <!-- Logo e título ficam na frente da camada escura -->
-    <img src="logotipo.jpg" alt="empresa" class="profile-pic" style="position: relative; z-index: 1;">
-    <h1 style="position: relative; z-index: 1;">Bem-vindo á F.Moraes Instalações</h1>
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <img src="logotipo.jpg" alt="F.Moraes Instalações" class="hero-logo">
+    <h1>Elétrica &amp;<br>Ar-condicionado<br><span>sem dor de cabeça</span></h1>
+    <p>Instalação, manutenção e higienização com segurança e normas técnicas — atendendo Corbélia e região.</p>
+    <a href="https://wa.me/5545998404286" class="hero-cta">📲 Pedir orçamento no WhatsApp</a>
+  </div>
 </header>
-    </header>
-    <!-- MAIN: Conteúdo principal da página -->
-    <main>
-           <!-- SECTION: Usada para agrupar conteúdos relacionados -->
-     <!-- 1. SEÇÃO SOBRE MIM -->
-<section id="sobre" style="background: white; padding: 40px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-width: 1200px; margin: 40px auto; text-align: center;">
-    <h2 style="color: #1a2a40; font-family: sans-serif; margin-bottom: 20px;">Sobre Mim</h2>
-    <img src="eu.jpg" alt="eu" width="160" style="border-radius: 50%; margin-bottom: 20px; border: 3px solid #f1c40f;">
-    <p style="line-height: 1.8; font-size: 1.1rem; color: #333; text-align: justify; padding: 0 20px; margin: 0 auto; max-width: 1000px;">
-        Meu nome é Felipe dos Santos Moraes, proprietário da F.Moraes Instalações (CNPJ: 66.024.620/0001-79). Com 26 anos de idade e 5 de experiência no setor elétrico, iniciei minha jornada no Exército Brasileiro, onde atuei na chefia do pelotão de obras como Cabo. Além da formação em Elétrica Residencial, possuo especialização em Redes de Distribuição (Construção e Manutenção de Redes - Linha Morta) e em Instalação e Manutenção de Ar-Condicionado. Hoje, aplico esse vasto conhecimento técnico em minha própria empresa, garantindo segurança, normas técnicas e eficiência em cada projeto executado.
-    </p>
-</section>
-<!-- Procure por esta parte e deixe assim: -->
-<section id="servicos-eletrica" class="borda-amarela">
-    <div class="container">
-        <h2>Serviços de Elétrica em Corbélia e Região</h2>
-    </div>
-</section>
 
+<!-- FAIXA DE CONFIANÇA -->
+<div class="trust-bar">
+  <div class="trust-item"><div class="num">5+</div><div class="label">Anos de experiência</div></div>
+  <div class="trust-item"><div class="num">CNPJ</div><div class="label">66.024.620/0001-79</div></div>
+  <div class="trust-item"><div class="num">Ex.</div><div class="label">Exército Brasileiro</div></div>
+  <div class="trust-item"><div class="num">Cert.</div><div class="label">Redes e Ar-Condicionado</div></div>
+</div>
 
-<!-- Seção dos Cards (Espalhando na mesma largura total) -->
-<section class="servicos" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; padding: 20px;">
-    
-    <!-- Card 1 -->
-    <div class="card">
-        <img src="card1.jpg" alt="Instalações"> <!-- Use o nome da sua foto aqui -->
-        <h3>Instalações Elétricas</h3>
-        <p>Instalação de novos pontos, tomadas e iluminação com segurança.</p>
-        <a href="https://wa.me/5545998404286" class="botao">Saiba Mais</a>
-    </div>
-
-    <!-- Card 2 -->
-    <div class="card">
-        <img src="card2.png" alt="Circuitos"> <!-- Use o nome da sua foto aqui -->
-        <h3>Circuitos e Fiações</h3>
-        <p>Revisão de fiações antigas e reforço de circuitos elétricos.</p>
-        <a href="https://wa.me/5545998404286" class="botao">Saiba Mais</a>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="card">
-        <img src="card3.jpeg" alt="Manutenção"> <!-- Use o nome da sua foto aqui -->
-        <h3>Consertos e Manutenções</h3>
-        <p>Reparo de disjuntores, chuveiros e manutenção geral.</p>
-        <a href="https://wa.me/5545998404286" class="botao">Saiba Mais</a>
-    </div>
-
-
+<!-- SOBRE -->
+<section class="about container">
+  <span class="switch-mark"><span class="nub"></span>Sobre</span>
+  <h2>Quem cuida da sua instalação</h2>
+  <p>Meu nome é Felipe dos Santos Moraes, proprietário da F.Moraes Instalações. Iniciei minha jornada no Exército Brasileiro, onde atuei na chefia do pelotão de obras como Cabo. Hoje aplico esse conhecimento técnico em cada projeto, garantindo segurança e eficiência do início ao fim.</p>
+  <ul class="cred-list">
+    <li>Formação em Elétrica Residencial</li>
+    <li>Especialização em Redes de Distribuição (Construção e Manutenção — Linha Morta)</li>
+    <li>Especialização em Instalação e Manutenção de Ar-Condicionado</li>
+  </ul>
 </section>
 
-
-<section id="servicos-eletrica" class="borda-amarela">
-    <div class="container">
-        <h2>Serviços de Instalação e Manutenção de Ar Condicionado em Corbélia e Região</h2>
-    </div>
-</section>
-
-
-<!-- Seção dos Cards (Espalhando na mesma largura total) -->
-<section class="servicos" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; padding: 20px;">
-    
-    <!-- Card 1 -->
-    <div class="card">
-        <img src="arcard1.jpeg" alt="Instalações"> <!-- Use o nome da sua foto aqui -->
-        <h3>Consertos e Manutençõe</h3>
-        <p>Manutenção preventiva, recarga de fluido refrigerante(gas), indentificação de vazamento na linha</p>
-        <a href="https://wa.me/5545998404286" class="botao">Saiba Mais</a>
+<!-- ELÉTRICA -->
+<section class="service-zone electric">
+  <div class="container">
+    <div class="zone-head">
+      <span class="switch-mark"><span class="nub"></span>Elétrica</span>
+      <h2>Serviços de Elétrica</h2>
+      <div class="loc">Corbélia e região</div>
     </div>
 
-    <!-- Card 2 -->
-    <div class="card">
-        <img src="arcard2.webp" alt="Circuitos"> <!-- Use o nome da sua foto aqui -->
-        <h3>Instalações</h3>
-        <p>Instalação de maquinas Inverter ou convncional.</p>
-        <a href="https://wa.me/5545998404286" class="botao">Saiba Mais</a>
-    </div>
-
-    <!-- Card 3 -->
-    <div class="card">
-        <img src="arcard3.jpeg" alt="Manutenção"> <!-- Use o nome da sua foto aqui -->
-        <h3>Higienização</h3>
-        <p>Higienização para melhor desenpenho da sua maquina.</p>
-        <a href="https://wa.me/5545998404286" class="botao">Saiba Mais</a>
-    </div>
-
-</section>
-
-
-<!-- 2. TÍTULO DE SERVIÇOS -->
-<section id="servicos" style="background: white; padding: 40px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-width: 1200px; margin: 0 auto 40px auto; text-align: center;">
-    
-    <h2 style="color: #1a2a40; font-family: sans-serif; margin-bottom: 30px; text-transform: uppercase;">Conheça meu trabalho</h2>
-
-    <!-- BLOCO AR CONDICIONADO -->
-    <div style="margin-bottom: 50px;">
-        <h3 style="margin-bottom: 20px; font-family: sans-serif; color: #333;">Instalações de Ar Condicionado Inverter</h3>
-        <div style="max-width: 900px; margin: 0 auto; position: relative; overflow: hidden; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
-            
-            <!-- Botões Estilizados -->
-            <button onclick="mover('galeria-ar', -1)" style="position: absolute; left: 15px; top: 50%; transform: translateY(-50%); z-index: 10; background: rgba(255,255,255,0.9); border: none; border-radius: 50%; width: 45px; height: 45px; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.2); font-size: 20px;">❮</button>
-            <button onclick="mover('galeria-ar', 1)" style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%); z-index: 10; background: rgba(255,255,255,0.9); border: none; border-radius: 50%; width: 45px; height: 45px; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.2); font-size: 20px;">❯</button>
-
-            <!-- Galeria com TODAS as suas fotos de Ar -->
-            <div id="galeria-ar" style="display: flex; transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);">
-                <div style="min-width: 100%;"><img src="trabalho.jpg" style="width: 100%; height: 900px; object-fit: cover;"><p style="background: #1a2a40; color: white; margin: 0; padding: 15px;">Instalação da condensadora</p></div>
-                <div style="min-width: 100%;"><img src="trabalho2.jpg" style="width: 100%; height: 900px; object-fit: cover;"><p style="background: #1a2a40; color: white; margin: 0; padding: 15px;">Instalação de Evaporadora</p></div>
-                <div style="min-width: 100%;"><img src="trabalho3.jpg" style="width: 100%; height: 900px; object-fit: cover;"><p style="background: #1a2a40; color: white; margin: 0; padding: 15px;">Instalações com vácuo</p></div>
-                <div style="min-width: 100%;"><img src="trabalho4.jpg" style="width: 100%; height: 900px; object-fit: cover;"><p style="background: #1a2a40; color: white; margin: 0; padding: 15px;">Instalações de Inverter 12mil btu</p></div>
-                <div style="min-width: 100%;"><img src="trabalho5.jpg" style="width: 100%; height: 900px; object-fit: cover;"><p style="background: #1a2a40; color: white; margin: 0; padding: 15px;">Instalações de Inverter 18mil btu</p></div>
-                <div style="min-width: 100%;"><img src="trabalho6.jpg" style="width: 100%; height: 900px; object-fit: cover;"><p style="background: #1a2a40; color: white; margin: 0; padding: 15px;">Instalações de Inverter 18mil btu</p></div>
-                <div style="min-width: 100%;"><img src="trabalho7.jpg" style="width: 100%; height: 900px; object-fit: cover;"><p style="background: #1a2a40; color: white; margin: 0; padding: 15px;">Instalações de Inverter 18mil btu</p></div>
-                <div style="min-width: 100%;"><img src="trabalho8.jpg" style="width: 100%; height: 900px; object-fit: cover;"><p style="background: #1a2a40; color: white; margin: 0; padding: 15px;">Instalações de suporte telhado </p></div>
-                <div style="min-width: 100%;"><img src="trabalho-lipeza1.jpg" style="width: 100%; height: 900px; object-fit: cover;"><p style="background: #1a2a40; color: white; margin: 0; padding: 15px;">Higienização em ar condicionado</p></div>
-                 <div style="min-width: 100%;"><img src="trabalho-limpeza2.jpg" style="width: 100%; height: 900px; object-fit: cover;"><p style="background: #1a2a40; color: white; margin: 0; padding: 15px;">Higienização em ar condicionado</p></div>
-                  <div style="min-width: 100%;"><img src="trabalho-limpeza3.jpg" style="width: 100%; height: 900px; object-fit: cover;"><p style="background: #1a2a40; color: white; margin: 0; padding: 15px;">Higienização em ar condicionado</p></div>
-            </div>
+    <div class="card-row">
+      <div class="svc-card">
+        <img src="card1.jpg" alt="Instalações Elétricas" class="thumb">
+        <div class="body">
+          <h3>Instalações</h3>
+          <p>Instalação de novos pontos, tomadas e iluminação com segurança.</p>
+          <a href="https://wa.me/5545998404286" class="btn">Pedir orçamento</a>
         </div>
-    </div>
-
-    <!-- BLOCO ELÉTRICA -->
-    <div>
-        <h3 style="margin-bottom: 20px; font-family: sans-serif; color: #333;">Instalações Elétricas</h3>
-        <div style="max-width: 900px; margin: 0 auto; position: relative; overflow: hidden; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
-            
-            <button onclick="mover('galeria-eletrica', -1)" style="position: absolute; left: 15px; top: 50%; transform: translateY(-50%); z-index: 10; background: rgba(255,255,255,0.9); border: none; border-radius: 50%; width: 45px; height: 45px; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.2); font-size: 20px;">❮</button>
-            <button onclick="mover('galeria-eletrica', 1)" style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%); z-index: 10; background: rgba(255,255,255,0.9); border: none; border-radius: 50%; width: 45px; height: 45px; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.2); font-size: 20px;">❯</button>
-
-            <div id="galeria-eletrica" style="display: flex; transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);">
-                <div style="min-width: 100%;"><img src="eletrica1.jpg" style="width: 100%; height: 900px; object-fit: cover;"><p style="background: #1a2a40; color: white; margin: 0; padding: 15px;">Instalação de câmera Wi-Fi</p></div>
-                 <div style="min-width: 100%;"><img src="eletrica2.jpg" style="width: 100%; height: 900px; object-fit: cover;"><p style="background: #1a2a40; color: white; margin: 0; padding: 15px;">Instalação de câmera Wi-Fi</p></div>
-                <div style="min-width: 100%;"><img src="eletrica3.jpg" style="width: 100%; height: 900px; object-fit: cover;"><p style="background: #1a2a40; color: white; margin: 0; padding: 15px;">Quadro Geral Simples</p></div>
-                 <div style="min-width: 100%;"><img src="eletrica4.jpg" style="width: 100%; height: 900px; object-fit: cover;"><p style="background: #1a2a40; color: white; margin: 0; padding: 15px;">Luminaria Wi-Fi</p></div>
-                  <div style="min-width: 100%;"><img src="eletrica5.jpg" style="width: 100%; height: 900px; object-fit: cover;"><p style="background: #1a2a40; color: white; margin: 0; padding: 15px;">Interruptor Wi-Fi</p></div>
-                <div style="min-width: 100%;"><img src="eletrica6.jpg" style="width: 100%; height: 900px; object-fit: cover;"><p style="background: #1a2a40; color: white; margin: 0; padding: 15px;">Instalação de luminárias</p></div>
-                 <div style="min-width: 100%;"><img src="eletrica7.jpg" style="width: 100%; height: 900px; object-fit: cover;"><p style="background: #1a2a40; color: white; margin: 0; padding: 15px;">Manutenção eletrica</p></div>
-                 <div style="min-width: 100%;"><img src="eletrica8.jpeg" style="width: 100%; height: 900px; object-fit: cover;"><p style="background: #1a2a40; color: white; margin: 0; padding: 15px;">Instalação de chuveiro</p></div>
-                 <div style="min-width: 100%;"><img src="eletrica9.jpeg" style="width: 100%; height: 900px; object-fit: cover;"><p style="background: #1a2a40; color: white; margin: 0; padding: 15px;">Instalação de Disjuntor para torneira elétrica</p></div>
-                 <div style="min-width: 100%;"><img src="eletrica10.jpeg" style="width: 100%; height: 900px; object-fit: cover;"><p style="background: #1a2a40; color: white; margin: 0; padding: 15px;">Instalação da torneira elétrica pt1</p></div>
-                 <div style="min-width: 100%;"><img src="eletrica11.jpeg" style="width: 100%; height: 900px; object-fit: cover;"><p style="background: #1a2a40; color: white; margin: 0; padding: 15px;">Instalação da torneira elétrica pt2</p></div>
-                 <div style="min-width: 100%;"><img src="eletrica12.jpeg" style="width: 100%; height: 900px; object-fit: cover;"><p style="background: #1a2a40; color: white; margin: 0; padding: 15px;">Antes da Manutenção</p></div>
-                 <div style="min-width: 100%;"><img src="eletrica13.jpeg" style="width: 100%; height: 900px; object-fit: cover;"><p style="background: #1a2a40; color: white; margin: 0; padding: 15px;">Depois da Manutenção e mais instalação de um disjuntor para torneira elétrica</p></div>
-                 <div style="min-width: 100%;"><img src="eletrica14.jpeg" style="width: 100%; height: 900px; object-fit: cover;"><p style="background: #1a2a40; color: white; margin: 0; padding: 15px;">Instalção da torneira elétrica pt1 </p></div>
-                 <div style="min-width: 100%;"><img src="eletrica15.jpeg" style="width: 100%; height: 900px; object-fit: cover;"><p style="background: #1a2a40; color: white; margin: 0; padding: 15px;">Instalação da torneira elétrica pt2</p></div>
-                 <div style="min-width: 100%;"><img src="eletrica16.jpeg" style="width: 100%; height: 900px; object-fit: cover;"><p style="background: #1a2a40; color: white; margin: 0; padding: 15px;">Instalação de Camera Wi-Fi </p></div>
-                 <div style="min-width: 100%;"><img src="eletrica17.jpeg" style="width: 100%; height: 900px; object-fit: cover;"><p style="background: #1a2a40; color: white; margin: 0; padding: 15px;">Instalação de Camera Wi-Fi </p></div>
-                 <div style="min-width: 100%;"><img src="ediculapt1.jpeg" style="width: 100%; height: 900px; object-fit: cover;"><p style="background: #1a2a40; color: white; margin: 0; padding: 15px;">Eletrica Edicula pt1</p></div>
-                 <div style="min-width: 100%;"><img src="ediculapt2.jpeg" style="width: 100%; height: 900px; object-fit: cover;"><p style="background: #1a2a40; color: white; margin: 0; padding: 15px;">Eletrica Edicula pt2 (arandelas)</p></div>
-                 <div style="min-width: 100%;"><img src="ediculapt3.jpeg" style="width: 100%; height: 900px; object-fit: cover;"><p style="background: #1a2a40; color: white; margin: 0; padding: 15px;">Eletrica Edicula pt3 (arandelas)</p></div>
-                 <div style="min-width: 100%;"><img src="ediculapt4.jpeg" style="width: 100%; height: 900px; object-fit: cover;"><p style="background: #1a2a40; color: white; margin: 0; padding: 15px;">Eletrica Edicula pt4</p></div>
-                 <div style="min-width: 100%;"><img src="ediculapt5.jpeg" style="width: 100%; height: 900px; object-fit: cover;"><p style="background: #1a2a40; color: white; margin: 0; padding: 15px;">Eletrica Edicula pt5 (tomadas)</p></div>
-                 <div style="min-width: 100%;"><img src="ediculapt6.jpeg" style="width: 100%; height: 900px; object-fit: cover;"><p style="background: #1a2a40; color: white; margin: 0; padding: 15px;">Eletrica Edicula pt6 (tomadas) </p></div>
-                  <div style="min-width: 100%;"><img src="ediculapt7.jpeg" style="width: 100%; height: 900px; object-fit: cover;"><p style="background: #1a2a40; color: white; margin: 0; padding: 15px;">Eletrica Edicula pt7 (interruptores) </p></div>
-                   <div style="min-width: 100%;"><img src="ediculapt8.jpeg" style="width: 100%; height: 900px; object-fit: cover;"><p style="background: #1a2a40; color: white; margin: 0; padding: 15px;">Eletrica Edicula pt8 (chuveiro pt1) </p></div>
-                    <div style="min-width: 100%;"><img src="ediculapt9.jpeg" style="width: 100%; height: 900px; object-fit: cover;"><p style="background: #1a2a40; color: white; margin: 0; padding: 15px;">Eletrica Edicula pt9 (chuveiro pt2) </p></div>
-                     <div style="min-width: 100%;"><img src="ediculapt10.jpeg" style="width: 100%; height: 900px; object-fit: cover;"><p style="background: #1a2a40; color: white; margin: 0; padding: 15px;">Eletrica Edicula pt10 (tomadas e Interruptores) </p></div>
-                      <div style="min-width: 100%;"><img src="ediculapt11.jpeg" style="width: 100%; height: 900px; object-fit: cover;"><p style="background: #1a2a40; color: white; margin: 0; padding: 15px;">Eletrica Edicula pt11 (visão Geral) </p></div>
-                    <div style="min-width: 100%;"><img src="ediculapt12.jpeg" style="width: 100%; height: 900px; object-fit: cover;"><p style="background: #1a2a40; color: white; margin: 0; padding: 15px;">Eletrica Edicula pt12 (quadro geral) </p></div>
-                    <div style="min-width: 100%;"><img src="ediculapt13.jpeg" style="width: 100%; height: 900px; object-fit: cover;"><p style="background: #1a2a40; color: white; margin: 0; padding: 15px;">Eletrica Edicula pt13 (QR-CODE - DIAGRAMA ELÉTRICO) </p></div>
-                    <div style="min-width: 100%;"><img src="ediculapt14.jpeg" style="width: 100%; height: 900px; object-fit: cover;"><p style="background: #1a2a40; color: white; margin: 0; padding: 15px;">Eletrica Edicula pt14 (DIAGRAMA ELÉTRICO) </p></div>
-            </div>
+      </div>
+      <div class="svc-card">
+        <img src="card2.png" alt="Circuitos e Fiações" class="thumb">
+        <div class="body">
+          <h3>Circuitos e fiações</h3>
+          <p>Revisão de fiações antigas e reforço de circuitos elétricos.</p>
+          <a href="https://wa.me/5545998404286" class="btn">Pedir orçamento</a>
         </div>
+      </div>
+      <div class="svc-card">
+        <img src="card3.jpeg" alt="Consertos e Manutenções" class="thumb">
+        <div class="body">
+          <h3>Consertos</h3>
+          <p>Reparo de disjuntores, chuveiros e manutenção geral.</p>
+          <a href="https://wa.me/5545998404286" class="btn">Pedir orçamento</a>
+        </div>
+      </div>
     </div>
+
+    <div class="gallery-block">
+      <h3>Trabalhos realizados</h3>
+      <div class="gallery" id="galeria-eletrica">
+      <div class="gallery-item"><img src="eletrica1.jpg" loading="lazy" alt="Instalação de câmera Wi-Fi"><p class="cap">Instalação de câmera Wi-Fi</p></div>
+      <div class="gallery-item"><img src="eletrica2.jpg" loading="lazy" alt="Instalação de câmera Wi-Fi"><p class="cap">Instalação de câmera Wi-Fi</p></div>
+      <div class="gallery-item"><img src="eletrica3.jpg" loading="lazy" alt="Quadro Geral Simples"><p class="cap">Quadro Geral Simples</p></div>
+      <div class="gallery-item"><img src="eletrica4.jpg" loading="lazy" alt="Luminaria Wi-Fi"><p class="cap">Luminaria Wi-Fi</p></div>
+      <div class="gallery-item"><img src="eletrica5.jpg" loading="lazy" alt="Interruptor Wi-Fi"><p class="cap">Interruptor Wi-Fi</p></div>
+      <div class="gallery-item"><img src="eletrica6.jpg" loading="lazy" alt="Instalação de luminárias"><p class="cap">Instalação de luminárias</p></div>
+      <div class="gallery-item"><img src="eletrica7.jpg" loading="lazy" alt="Manutenção eletrica"><p class="cap">Manutenção eletrica</p></div>
+      <div class="gallery-item"><img src="eletrica8.jpeg" loading="lazy" alt="Instalação de chuveiro"><p class="cap">Instalação de chuveiro</p></div>
+      <div class="gallery-item"><img src="eletrica9.jpeg" loading="lazy" alt="Instalação de Disjuntor para torneira elétrica"><p class="cap">Instalação de Disjuntor para torneira elétrica</p></div>
+      <div class="gallery-item"><img src="eletrica10.jpeg" loading="lazy" alt="Instalação da torneira elétrica pt1"><p class="cap">Instalação da torneira elétrica pt1</p></div>
+      <div class="gallery-item"><img src="eletrica11.jpeg" loading="lazy" alt="Instalação da torneira elétrica pt2"><p class="cap">Instalação da torneira elétrica pt2</p></div>
+      <div class="gallery-item"><img src="eletrica12.jpeg" loading="lazy" alt="Antes da Manutenção"><p class="cap">Antes da Manutenção</p></div>
+      <div class="gallery-item"><img src="eletrica13.jpeg" loading="lazy" alt="Depois da Manutenção e mais instalação de um disjuntor para torneira elétrica"><p class="cap">Depois da Manutenção e mais instalação de um disjuntor para torneira elétrica</p></div>
+      <div class="gallery-item"><img src="eletrica14.jpeg" loading="lazy" alt="Instalção da torneira elétrica pt1"><p class="cap">Instalção da torneira elétrica pt1</p></div>
+      <div class="gallery-item"><img src="eletrica15.jpeg" loading="lazy" alt="Instalação da torneira elétrica pt2"><p class="cap">Instalação da torneira elétrica pt2</p></div>
+      <div class="gallery-item"><img src="eletrica16.jpeg" loading="lazy" alt="Instalação de Camera Wi-Fi"><p class="cap">Instalação de Camera Wi-Fi</p></div>
+      <div class="gallery-item"><img src="eletrica17.jpeg" loading="lazy" alt="Instalação de Camera Wi-Fi"><p class="cap">Instalação de Camera Wi-Fi</p></div>
+      <div class="gallery-item"><img src="ediculapt1.jpeg" loading="lazy" alt="Eletrica Edicula pt1"><p class="cap">Eletrica Edicula pt1</p></div>
+      <div class="gallery-item"><img src="ediculapt2.jpeg" loading="lazy" alt="Eletrica Edicula pt2 (arandelas)"><p class="cap">Eletrica Edicula pt2 (arandelas)</p></div>
+      <div class="gallery-item"><img src="ediculapt3.jpeg" loading="lazy" alt="Eletrica Edicula pt3 (arandelas)"><p class="cap">Eletrica Edicula pt3 (arandelas)</p></div>
+      <div class="gallery-item"><img src="ediculapt4.jpeg" loading="lazy" alt="Eletrica Edicula pt4"><p class="cap">Eletrica Edicula pt4</p></div>
+      <div class="gallery-item"><img src="ediculapt5.jpeg" loading="lazy" alt="Eletrica Edicula pt5 (tomadas)"><p class="cap">Eletrica Edicula pt5 (tomadas)</p></div>
+      <div class="gallery-item"><img src="ediculapt6.jpeg" loading="lazy" alt="Eletrica Edicula pt6 (tomadas)"><p class="cap">Eletrica Edicula pt6 (tomadas)</p></div>
+      <div class="gallery-item"><img src="ediculapt7.jpeg" loading="lazy" alt="Eletrica Edicula pt7 (interruptores)"><p class="cap">Eletrica Edicula pt7 (interruptores)</p></div>
+      <div class="gallery-item"><img src="ediculapt8.jpeg" loading="lazy" alt="Eletrica Edicula pt8 (chuveiro pt1)"><p class="cap">Eletrica Edicula pt8 (chuveiro pt1)</p></div>
+      <div class="gallery-item"><img src="ediculapt9.jpeg" loading="lazy" alt="Eletrica Edicula pt9 (chuveiro pt2)"><p class="cap">Eletrica Edicula pt9 (chuveiro pt2)</p></div>
+      <div class="gallery-item"><img src="ediculapt10.jpeg" loading="lazy" alt="Eletrica Edicula pt10 (tomadas e Interruptores)"><p class="cap">Eletrica Edicula pt10 (tomadas e Interruptores)</p></div>
+      <div class="gallery-item"><img src="ediculapt11.jpeg" loading="lazy" alt="Eletrica Edicula pt11 (visão Geral)"><p class="cap">Eletrica Edicula pt11 (visão Geral)</p></div>
+      <div class="gallery-item"><img src="ediculapt12.jpeg" loading="lazy" alt="Eletrica Edicula pt12 (quadro geral)"><p class="cap">Eletrica Edicula pt12 (quadro geral)</p></div>
+      <div class="gallery-item"><img src="ediculapt13.jpeg" loading="lazy" alt="Eletrica Edicula pt13 (QR-CODE - DIAGRAMA ELÉTRICO)"><p class="cap">Eletrica Edicula pt13 (QR-CODE - DIAGRAMA ELÉTRICO)</p></div>
+      <div class="gallery-item"><img src="ediculapt14.jpeg" loading="lazy" alt="Eletrica Edicula pt14 (DIAGRAMA ELÉTRICO)"><p class="cap">Eletrica Edicula pt14 (DIAGRAMA ELÉTRICO)</p></div>
+      </div>
+      <div class="gallery-hint">← deslize pra ver mais →</div>
+    </div>
+  </div>
 </section>
 
-<!-- 5. MEIOS DE CONTATO -->
-<section id="contato" style="background: white; padding: 40px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-width: 1200px; margin: 0 auto 60px auto; text-align: center;">
-    <h2 style="color: #1a2a40; font-family: sans-serif; margin-bottom: 10px;">Meios de contato</h2>
-    <p style="color: #666; margin-bottom: 30px;">Escolha a melhor forma de falar comigo e peça seu orçamento:</p>
-    
-    <div class="lista-contatos" style="display: flex; flex-direction: column; align-items: center; gap: 15px;">
-        <a href="https://wa.me/5545998404286" target="_blank" class="btn-contato whats" style="width: 100%; max-width: 400px; background: #25d366; color: white; padding: 15px; border-radius: 8px; text-decoration: none; font-weight: bold; display: flex; align-items: center; justify-content: center; gap: 10px;">
-            <img src="whatsapp.png" alt="WhatsApp" width="24"> WhatsApp (Falar com Felipe)
-        </a>
-        <a href="https://www.instagram.com/fmoraesservicoseletricos?igsh=MWljbDBmcWF4YzA2bw%3D%3D&utm_source=qr" target="_blank" class="btn-contato insta" style="width: 100%; max-width: 400px; background: #e1306c; color: white; padding: 15px; border-radius: 8px; text-decoration: none; font-weight: bold; display: flex; align-items: center; justify-content: center; gap: 10px;">
-            <img src="instagram.png" alt="Instagram" width="24"> Siga no Instagram
-        </a>
-        <a href="https://www.facebook.com/share/1CqnXVnApn/?mibextidwwXIfr" target="_blank" class="btn-contato face" style="width: 100%; max-width: 400px; background: #1877f2; color: white; padding: 15px; border-radius: 8px; text-decoration: none; font-weight: bold; display: flex; align-items: center; justify-content: center; gap: 10px;">
-            <img src="facebook.png" alt="Facebook" width="24"> Página no Facebook
-        </a>
+<!-- AR CONDICIONADO -->
+<section class="service-zone climate">
+  <div class="container">
+    <div class="zone-head">
+      <span class="switch-mark ice"><span class="nub"></span>Climatização</span>
+      <h2>Ar-Condicionado</h2>
+      <div class="loc">Instalação e manutenção — Corbélia e região</div>
     </div>
+
+    <div class="card-row">
+      <div class="svc-card">
+        <img src="arcard2.webp" alt="Instalações de ar-condicionado" class="thumb">
+        <div class="body">
+          <h3>Instalações</h3>
+          <p>Instalação de máquinas Inverter ou convencional.</p>
+          <a href="https://wa.me/5545998404286" class="btn">Pedir orçamento</a>
+        </div>
+      </div>
+      <div class="svc-card">
+        <img src="arcard1.jpeg" alt="Consertos e manutenções" class="thumb">
+        <div class="body">
+          <h3>Consertos</h3>
+          <p>Manutenção preventiva, recarga de gás, identificação de vazamento.</p>
+          <a href="https://wa.me/5545998404286" class="btn">Pedir orçamento</a>
+        </div>
+      </div>
+      <div class="svc-card">
+        <img src="arcard3.jpeg" alt="Higienização" class="thumb">
+        <div class="body">
+          <h3>Higienização</h3>
+          <p>Limpeza completa para melhor desempenho da sua máquina.</p>
+          <a href="https://wa.me/5545998404286" class="btn">Pedir orçamento</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-block">
+      <h3>Trabalhos realizados</h3>
+      <div class="gallery" id="galeria-ar">
+      <div class="gallery-item"><img src="trabalho.jpg" loading="lazy" alt="Instalação da condensadora"><p class="cap">Instalação da condensadora</p></div>
+      <div class="gallery-item"><img src="trabalho2.jpg" loading="lazy" alt="Instalação de Evaporadora"><p class="cap">Instalação de Evaporadora</p></div>
+      <div class="gallery-item"><img src="trabalho3.jpg" loading="lazy" alt="Instalações com vácuo"><p class="cap">Instalações com vácuo</p></div>
+      <div class="gallery-item"><img src="trabalho4.jpg" loading="lazy" alt="Instalações de Inverter 12mil btu"><p class="cap">Instalações de Inverter 12mil btu</p></div>
+      <div class="gallery-item"><img src="trabalho5.jpg" loading="lazy" alt="Instalações de Inverter 18mil btu"><p class="cap">Instalações de Inverter 18mil btu</p></div>
+      <div class="gallery-item"><img src="trabalho6.jpg" loading="lazy" alt="Instalações de Inverter 18mil btu"><p class="cap">Instalações de Inverter 18mil btu</p></div>
+      <div class="gallery-item"><img src="trabalho7.jpg" loading="lazy" alt="Instalações de Inverter 18mil btu"><p class="cap">Instalações de Inverter 18mil btu</p></div>
+      <div class="gallery-item"><img src="trabalho8.jpg" loading="lazy" alt="Instalações de suporte telhado"><p class="cap">Instalações de suporte telhado</p></div>
+      <div class="gallery-item"><img src="trabalho-lipeza1.jpg" loading="lazy" alt="Higienização em ar condicionado"><p class="cap">Higienização em ar condicionado</p></div>
+      <div class="gallery-item"><img src="trabalho-limpeza2.jpg" loading="lazy" alt="Higienização em ar condicionado"><p class="cap">Higienização em ar condicionado</p></div>
+      <div class="gallery-item"><img src="trabalho-limpeza3.jpg" loading="lazy" alt="Higienização em ar condicionado"><p class="cap">Higienização em ar condicionado</p></div>
+      </div>
+      <div class="gallery-hint">← deslize pra ver mais →</div>
+    </div>
+  </div>
 </section>
-<script>
-    let indices = { 'galeria-ar': 0, 'galeria-eletrica': 0 };
 
-    function mover(id, direcao) {
-        const galeria = document.getElementById(id);
-        const total = galeria.children.length;
-        
-        indices[id] += direcao;
+<!-- CONTATO -->
+<section class="contact container">
+  <span class="switch-mark" style="justify-content:center;"><span class="nub"></span>Contato</span>
+  <h2>Vamos conversar</h2>
+  <p>Escolha a melhor forma de falar comigo e peça seu orçamento</p>
+  <div class="contact-list">
+    <a href="https://wa.me/5545998404286" target="_blank" class="contact-btn whats">
+      <img src="whatsapp.png" alt=""> WhatsApp — falar com Felipe
+    </a>
+    <a href="https://g.page/r/Cda_ZN3XmcffEAE/review" target="_blank" class="contact-btn review">
+      <span class="stars">★★★★★</span> Avaliar no Google
+    </a>
+    <a href="https://www.instagram.com/fmoraesservicoseletricos?igsh=MWljbDBmcWF4YzA2bw%3D%3D&utm_source=qr" target="_blank" class="contact-btn insta">
+      <img src="instagram.png" alt=""> Seguir no Instagram
+    </a>
+    <a href="https://www.facebook.com/share/1CqnXVnApn/?mibextidwwXIfr" target="_blank" class="contact-btn face">
+      <img src="facebook.png" alt=""> Página no Facebook
+    </a>
+  </div>
+</section>
 
-        if (indices[id] >= total) indices[id] = 0;
-        if (indices[id] < 0) indices[id] = total - 1;
+<footer>
+  F.MORAES INSTALAÇÕES E CLIMATIZAÇÃO — CNPJ 66.024.620/0001-79 — CORBÉLIA/PR
+</footer>
 
-        galeria.style.transform = `translateX(${-indices[id] * 100}%)`;
-    }
-</script>
+<a href="https://wa.me/5545998404286" class="float-whats" aria-label="WhatsApp">
+  <img src="whatsapp.png" alt="">
+</a>
+
+</body>
+</html>
